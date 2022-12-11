@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Admin</title>
+    <link rel="stylesheet" href="E-commerce.css">
+</head>
+<body>
+    
+    <form onsubmit="ProductData(event)">
+        <h1>Admin Dashboard</h1>
+        <input type="text" placeholder="Product Name" id="name">
+        <input type="text" placeholder="Category" id="category">
+        <input type="text" placeholder="Image URL" id="image">
+        <input type="text" placeholder="Price" id="price">
+        <select id="gender">
+            <option>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <select id="sold">
+            <option value="false">Not-Sold</option>
+            <option value="true">Sold</option>
+        </select>
+        <button id="add">Submit</button>
+    </form>
+    <button id="product"><a href="products.html">Products</a></button>
+</body>
+<script src="admin.js"></script>
+</html>
